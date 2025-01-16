@@ -734,7 +734,7 @@ h6, .h6 {
 }
 
 .title-xxl {
-  font-size: 10vw;
+  font-size: 6vw;
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -1000,6 +1000,10 @@ a:focus {
 
 .h-v-80 {
   height: 80vh;
+}
+
+.h-v-50 {
+  height: 50vh !important;
 }
 
 [data-overlay]:before, [data-dsn-overlay]:before {

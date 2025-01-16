@@ -90,7 +90,7 @@
   --font-size-base: 15px;
   --font-size-h1: 40px;
   --font-size-h2: 35px;
-  --font-size-h3: 30px;
+  --font-size-h3: 34px;
   --font-size-h4: 25px;
   --font-size-h5: 22px;
   --font-size-h6: 16px;
@@ -109,7 +109,7 @@
 @media only screen and (min-width: 1400px) {
   :root {
     --dsn-gap-container: 100px;
-    --title-heading: 95px;
+    --title-heading: 75px;
   }
   :root .container, :root .dsn-left-container, :root .dsn-right-container {
     --dsn-gap-container: 50px;
@@ -118,12 +118,13 @@
 @media only screen and (max-width: 1399px) {
   :root {
     --dsn-gap-container: 50px;
-    --title-heading: 85px;
+    --title-heading: 65px;
+    --font-size-h3: 32px;
   }
 }
 @media only screen and (max-width: 1199px) {
   :root {
-    --title-heading: 75px;
+    --title-heading: 55px;
   }
   #head_links, #contact_link {
     display: none !important;
@@ -131,15 +132,15 @@
 }
 @media only screen and (min-width: 992px) {
   :root {
-    --margin-padding: 120px;
+    --margin-padding: 90px;
     --box-padding: 80px 40px;
   }
 }
 @media only screen and (max-width: 991px) {
   :root {
-    --margin-padding: 80px;
+    --margin-padding: 70px;
     --box-padding: 60px var(--dsn-gap-container);
-    --title-heading: 65px;
+    --title-heading: 45px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -150,13 +151,15 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   :root {
     --dsn-gap-container: 25px;
-    --title-heading: 47px;
+    --title-heading: 37px;
+    --font-size-h3: 28px;
   }
 }
 @media only screen and (max-width: 575px) {
   :root {
     --dsn-gap-container: 15px;
-    --title-heading: 47px;
+    --title-heading: 37px;
+    --font-size-h3: 24px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1434,7 +1437,7 @@ a:hover, a:active {
 
 .social-side {
   position: fixed;
-  left: 25px;
+  left: 10px;
   bottom: 50px;
   z-index: 10;
   display: flex;
@@ -2046,7 +2049,7 @@ a:hover, a:active {
   z-index: 2;
 }
 #dsn_header.header-normal {
-  padding-top: 180px;
+  padding-top: 100px;
 }
 @media only screen and (min-width: 768px) {
   #dsn_header.header-normal .title:not(.title-org) {
@@ -2067,7 +2070,7 @@ a:hover, a:active {
 .dsn-scroll-bottom {
   position: absolute;
   right: 20px;
-  bottom: 50px;
+  bottom: 20%;
   z-index: 1;
   width: -webkit-fit-content;
   width: fit-content;
@@ -2548,7 +2551,7 @@ a:hover, a:active {
 .dsn-posts .metas > span:not(:last-of-type)::after {
   content: attr(data-separator);
 }
-.dsn-style-cards .dsn-posts:not(.box-image-blackdsn) .post-content {
+.dsn-style-cards .dsn-posts:not(.box-image-Logo) .post-content {
   position: absolute;
   padding: 50px 30px;
   width: 100%;
@@ -2611,20 +2614,20 @@ a:hover, a:active {
 .dsn-style-cards .dsn-posts.box-image-hover .post-content {
   width: 100%;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn {
+.dsn-style-cards .dsn-posts.box-image-Logo {
   counter-reset: workcounter;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-image-bg {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-image-bg {
   height: 70vh;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-image-link {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-image-link {
   position: relative;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-content {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-content {
   flex-direction: column;
   padding-left: 50px;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-content:before {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-content:before {
   counter-increment: workcounter;
   position: absolute;
   top: 4px;
@@ -2637,17 +2640,17 @@ a:hover, a:active {
   padding: 15px;
   background-color: var(--assistant-color);
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-content .post-title {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-content .post-title {
   padding-left: 20px;
   padding-bottom: 15px;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-content .post-title-info {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-content .post-title-info {
   display: flex;
   flex-direction: column;
   align-items: end;
   padding-top: 20px;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .box-content .dsn-post-link {
+.dsn-style-cards .dsn-posts.box-image-Logo .box-content .dsn-post-link {
   position: absolute;
   left: -50px;
   bottom: 10px;
@@ -2659,17 +2662,17 @@ a:hover, a:active {
   color: var(--heading-color);
   text-transform: uppercase;
 }
-.dsn-style-cards .dsn-posts.box-image-blackdsn .dsn-swiper a.box-image-link {
+.dsn-style-cards .dsn-posts.box-image-Logo .dsn-swiper a.box-image-link {
   pointer-events: none;
 }
 @media only screen and (max-width: 767px) {
-  .dsn-style-cards .dsn-posts.box-image-blackdsn .box-content {
+  .dsn-style-cards .dsn-posts.box-image-Logo .box-content {
     padding-left: 0;
   }
-  .dsn-style-cards .dsn-posts.box-image-blackdsn .box-content .post-title-info {
+  .dsn-style-cards .dsn-posts.box-image-Logo .box-content .post-title-info {
     padding-right: 20px;
   }
-  .dsn-style-cards .dsn-posts.box-image-blackdsn .box-content .dsn-post-link, .dsn-style-cards .dsn-posts.box-image-blackdsn .box-content:before {
+  .dsn-style-cards .dsn-posts.box-image-Logo .box-content .dsn-post-link, .dsn-style-cards .dsn-posts.box-image-Logo .box-content:before {
     display: none;
   }
 }
@@ -4071,11 +4074,11 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
   top: 0;
 }
 
-.blackdsn-media-swiper .content {
+.Logo-media-swiper .content {
   width: 80px;
   z-index: 3;
 }
-.blackdsn-media-swiper .content a {
+.Logo-media-swiper .content a {
   border-radius: 50%;
 }
 
@@ -4869,7 +4872,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 .about-section .box-creative .img-top {
   width: 190px;
   top: 30px;
-  left: 0;
+  left: 25px;
 }
 .about-section .box-creative .img-bottom {
   left: 25px;
@@ -5263,7 +5266,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 .woocommerce .woocommerce-ordering {
   margin-bottom: 30px;
 }
-.woocommerce .blackdsn-product-image {
+.woocommerce .Logo-product-image {
   overflow: hidden;
   width: 100%;
 }
@@ -5273,22 +5276,22 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
   display: flex;
   align-items: center;
 }
-.woocommerce ul.dsn-shop.products.list li.product .blackdsn-product-image {
+.woocommerce ul.dsn-shop.products.list li.product .Logo-product-image {
   flex: 0 0 25%;
   max-width: 25%;
 }
-.woocommerce ul.dsn-shop.products.list li.product .blackdsn-product-content {
+.woocommerce ul.dsn-shop.products.list li.product .Logo-product-content {
   flex: 0 0 75%;
   max-width: 75%;
   margin-left: 30px;
   text-align: left;
 }
-.woocommerce ul.dsn-shop.products.list li.product .blackdsn-product-content .woocommerce-product-details__short-description {
+.woocommerce ul.dsn-shop.products.list li.product .Logo-product-content .woocommerce-product-details__short-description {
   display: block;
   margin-top: 5px;
   margin-bottom: 15px;
 }
-.woocommerce ul.dsn-shop.products li.product .onsale.dsn-blackdsn-sale {
+.woocommerce ul.dsn-shop.products li.product .onsale.dsn-Logo-sale {
   position: absolute;
   display: inline-block;
   top: 10px;
@@ -5309,11 +5312,11 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
   box-shadow: 0 2px 5px 0 #DA3F3F;
   z-index: 10;
 }
-.woocommerce ul.dsn-shop.products li.product .onsale.dsn-blackdsn-sale .number {
+.woocommerce ul.dsn-shop.products li.product .onsale.dsn-Logo-sale .number {
   margin-bottom: 2px;
   font-size: 16px;
 }
-.woocommerce ul.dsn-shop.products li.product .onsale.dsn-blackdsn-sale .number sup {
+.woocommerce ul.dsn-shop.products li.product .onsale.dsn-Logo-sale .number sup {
   position: relative;
   top: -3px;
   left: -4px;
@@ -5335,7 +5338,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 .woocommerce ul.dsn-shop.products li.product .button.added:after {
   display: none;
 }
-.woocommerce ul.dsn-shop.products li.product > *:not(.blackdsn-product-image, a) {
+.woocommerce ul.dsn-shop.products li.product > *:not(.Logo-product-image, a) {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -5360,7 +5363,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 .woocommerce ul.dsn-shop.products li.product .dsn-quick-view .icon-view svg {
   transform: translateY(-20px);
 }
-.woocommerce ul.dsn-shop.products li.product .blackdsn-product-content {
+.woocommerce ul.dsn-shop.products li.product .Logo-product-content {
   width: 100%;
 }
 .woocommerce ul.dsn-shop.products li.product .woocommerce-loop-product__title {
@@ -5496,7 +5499,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
       Tabs
    */
 }
-.woocommerce .dsn-blackdsn.dsn-single-product {
+.woocommerce .dsn-Logo.dsn-single-product {
   padding-top: 180px;
   padding-bottom: 100px;
 }
@@ -5572,7 +5575,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 .woocommerce div.product .dsn-price ins, .woocommerce div.product .dsn-price bdi {
   color: var(--heading-color);
 }
-.woocommerce .onsale.dsn-blackdsn-sale {
+.woocommerce .onsale.dsn-Logo-sale {
   position: absolute;
   display: inline-block;
   top: 10px;
@@ -5592,11 +5595,11 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
   box-shadow: 2px 2px 5px 0 var(--assistant-color);
   z-index: 1;
 }
-.woocommerce .onsale.dsn-blackdsn-sale .number {
+.woocommerce .onsale.dsn-Logo-sale .number {
   margin-bottom: 2px;
   font-size: 16px;
 }
-.woocommerce .onsale.dsn-blackdsn-sale .number sup {
+.woocommerce .onsale.dsn-Logo-sale .number sup {
   position: relative;
   top: -3px;
   left: -4px;
