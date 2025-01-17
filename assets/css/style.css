@@ -151,14 +151,14 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   :root {
     --dsn-gap-container: 25px;
-    --title-heading: 37px;
+    --title-heading: 34px;
     --font-size-h3: 28px;
   }
 }
 @media only screen and (max-width: 575px) {
   :root {
     --dsn-gap-container: 15px;
-    --title-heading: 37px;
+    --title-heading: 30px;
     --font-size-h3: 24px;
   }
 }
@@ -4999,6 +4999,14 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
   .about-2 .box-img {
     display: none;
   }
+
+  .learn-more-title {
+    font-size: 20px !important;
+  }
+  .title-h2 {
+    font-size: 26px;
+    line-height: inherit;
+}
 }
 
 .about-personal {
@@ -5056,11 +5064,15 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 @media only screen and (max-width: 575px) {
   .section-video .content {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
   }
-  .section-video .animate-left, .section-video .animate-right {
-    display: none;
+  .learn-more-title {
+    font-size: 16px !important;
   }
+  .title-h2 {
+    font-size: 22px;
+    line-height: inherit;
+}
 }
 
 @media only screen and (max-width: 991px) {

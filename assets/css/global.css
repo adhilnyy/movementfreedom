@@ -1144,6 +1144,7 @@ a:focus {
 .d-grid.dsn-isotope, .d-grid.dsn-flex {
   display: flex;
 }
+
 @media only screen and (min-width: 992px) {
   .d-grid.dsn-isotope, .d-grid.dsn-flex {
     margin-left: calc((var(--grid-gap ,30px) / 2) * -1);
@@ -2282,6 +2283,10 @@ a:focus {
 
 .align-self-stretch {
   align-self: stretch;
+}
+
+.gap-3 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
