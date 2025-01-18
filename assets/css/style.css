@@ -2532,18 +2532,18 @@ a:hover, a:active {
   text-align: right;
 }
 @media only screen and (min-width: 992px) {
-  .dsn-posts.use-horizontal-scroll {
+  /* .dsn-posts.use-horizontal-scroll {
     flex-wrap: nowrap;
-  }
+  } */
 }
 @media only screen and (max-width: 991px) {
   .dsn-posts.use-horizontal-scroll {
     padding-right: var(--dsn-gap-container);
     padding-left: var(--dsn-gap-container);
   }
-  .dsn-posts.use-horizontal-scroll .start-section, .dsn-posts.use-horizontal-scroll .end-section {
+  /* .dsn-posts.use-horizontal-scroll .start-section, .dsn-posts.use-horizontal-scroll .end-section {
     display: none;
-  }
+  } */
 }
 .dsn-posts .metas {
   margin-bottom: 0;
